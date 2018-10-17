@@ -1,0 +1,6 @@
+image: paternal/pythons:buster
+
+tox:
+  script:
+    - tox
+  coverage: '/^.*sphinxcontrib-stuffcounter.*\s(\d+)\%$/'

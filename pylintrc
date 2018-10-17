@@ -1,0 +1,7 @@
+[VARIABLES]
+dummy-variables-rgx=_|dummy
+
+[MESSAGES CONTROL]
+disable =
+    I,
+    bad-continuation, # black takes care of this
