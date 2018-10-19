@@ -6,12 +6,27 @@
 Welcome to Stuff Counter's documentation!
 =========================================
 
-TODO
+In this documentation, there are:
+
+- automatically numbered stuff,
+- that can be referenced.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+.. _this:
+
+.. stuff::
+   :caption: A stuff *with* a caption.
+
+   The :ref:`next stuff <that>` does not have a caption.
+
+.. _that:
+
+.. stuff::
+
+   This stuff does not have a caption (althouth :numref:`this` has one).
 
 
 Indices and tables
