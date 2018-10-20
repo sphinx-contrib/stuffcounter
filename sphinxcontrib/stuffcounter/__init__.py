@@ -8,8 +8,6 @@
     :license: GPLv3+, see LICENSE for details.
 """
 
-import pbr.version
-
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.statemachine import ViewList
@@ -17,7 +15,7 @@ from docutils.statemachine import ViewList
 from sphinx.domains.std import StandardDomain
 from sphinx.util.docutils import SphinxDirective
 
-__version__ = pbr.version.VersionInfo("stuffcounter").version_string()
+__version__ = "0.0.0"
 
 
 class StuffDomain(StandardDomain):
