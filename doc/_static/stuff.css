@@ -1,0 +1,17 @@
+.stuff {
+    border: 3px solid black;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.stuff > .stuff-caption {
+    padding: .5em;
+    margin: 0em;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.stuff > .stuff-content {
+    padding: .5em;
+}
