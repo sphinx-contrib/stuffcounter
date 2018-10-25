@@ -17,14 +17,14 @@ In this documentation, there are:
 
 .. _this:
 
-.. stuff::
+.. stuffcounter:stuff::
    :caption: A stuff *with* a caption.
 
    The :ref:`next stuff <that>` does not have a caption.
 
 .. _that:
 
-.. stuff::
+.. stuffcounter:stuff::
 
    This stuff does not have a caption (althouth :numref:`this` has one).
 

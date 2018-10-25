@@ -18,13 +18,6 @@ from sphinx.util.docutils import SphinxDirective
 __version__ = "0.0.0"
 
 
-class StuffDomain(StandardDomain):
-    """Stuff domain"""
-
-    name = "stuff"
-    label = "stuff"
-
-
 class StuffNode(nodes.General, nodes.Element):
     """Stuff"""
 
@@ -59,7 +52,7 @@ def stuff_wrapper(directive, node, caption=None):
     return node
 
 
-class StuffEnvironment(SphinxDirective):
+class StuffDirective(SphinxDirective):
     """An environment for stuffs."""
 
     has_content = True
@@ -85,6 +78,15 @@ class StuffEnvironment(SphinxDirective):
         self.add_name(node)
 
         return [node]
+
+
+class StuffDomain(StandardDomain):
+    """Stuff domain"""
+
+    name = "stuffcounter"
+    label = "Stuff Counter"
+
+    directives = {"stuff": StuffDirective}
 
 
 ################################################################################
@@ -203,8 +205,6 @@ def setup(app):
     app.connect("config-inited", init_numfig_format)
 
     app.add_stylesheet("stuff.css")
-
-    app.add_directive("stuff", StuffEnvironment)
 
     app.add_enumerable_node(
         StuffNode,
