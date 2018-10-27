@@ -11,7 +11,7 @@ In this documentation, there are:
 - automatically numbered stuff,
 - that can be referenced.
 
-This project is hosted at `framagit.org <https://framagit.org/spalax/sphinxcontrib-stuffcounter>`_ (the interesting file is `sphinxcontrib/stuffcounter/__init__.py <https://framagit.org/spalax/sphinxcontrib-stuffcounter/blob/master/sphinxcontrib/stuffcounter/__init__.py>`_.
+This project is hosted at `Github <https://github.com/sphinx-contrib/stuffcounter>`_ (the interesting file is `sphinxcontrib/stuffcounter/__init__.py <https://github.com/sphinx-contrib/stuffcounter/blob/master/sphinxcontrib/stuffcounter/__init__.py>`_.
 
 .. contents:: Table of contents
    :local:
