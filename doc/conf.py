@@ -137,10 +137,9 @@ latex_documents = [
         "StuffCounter.tex",
         "Stuff Counter Documentation",
         "Louis Paternault",
-        "manual",
+        "howto",
     )
 ]
-
 
 # -- Options for manual page output ------------------------------------------
 
