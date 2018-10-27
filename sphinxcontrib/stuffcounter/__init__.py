@@ -30,22 +30,16 @@ class ContentNode(nodes.General, nodes.Element):
     pass
 
 
-class CaptionNode(nodes.Part, nodes.TextElement):
-    """Caption of stuff."""
-
-    pass
-
-
 def stuff_wrapper(directive, node, caption=None):
     """Parse caption, and append it to the node."""
     parsed = nodes.Element()
     if caption is None:
-        caption_node = CaptionNode()
+        caption_node = nodes.caption()
     else:
         directive.state.nested_parse(
             ViewList([caption], source=""), directive.content_offset, parsed
         )
-        caption_node = CaptionNode(parsed[0].rawsource, "", *parsed[0].children)
+        caption_node = nodes.caption(parsed[0].rawsource, "", *parsed[0].children)
         caption_node.source = parsed[0].source
         caption_node.line = parsed[0].line
     node += caption_node
@@ -214,7 +208,8 @@ def setup(app):
         latex=(latex_visit_stuff_node, latex_depart_stuff_node),
     )
     app.add_node(
-        CaptionNode,
+        nodes.caption,
+        override=True,
         html=(html_visit_caption_node, html_depart_caption_node),
         singlehtml=(html_visit_caption_node, html_depart_caption_node),
         latex=(latex_visit_caption_node, latex_depart_caption_node),
