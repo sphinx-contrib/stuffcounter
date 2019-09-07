@@ -6,12 +6,17 @@
 Welcome to Stuff Counter's documentation!
 =========================================
 
-In this documentation, there are:
+`This project <https://framagit.org/spalax/sphinxcontrib-stuffcounter>`_ is a dummy extension meant to serve as an example for extensions writers. It illustrates the definition of a directive that:
 
-- automatically numbered stuff,
-- that can be referenced.
+- is automatically numbered,
+- can be referenced (using ``:ref:`` or ``:numref:``).
 
-This project is hosted at `framagit.org <https://framagit.org/spalax/sphinxcontrib-stuffcounter>`_ (the interesting file is `sphinxcontrib/stuffcounter/__init__.py <https://framagit.org/spalax/sphinxcontrib-stuffcounter/blob/master/sphinxcontrib/stuffcounter/__init__.py>`_.
+If you want to write such a directive, study this `extension source code <https://framagit.org/spalax/sphinxcontrib-stuffcounter/blob/master/sphinxcontrib/stuffcounter/__init__.py>`_. The main points to look at (and copy) are:
+
+- in the ``setup()`` function, the call to ``add_enumerable_node()``;
+- definition of the directive (class ``StuffDirective`` in this example).
+
+Good luck!
 
 .. contents:: Table of contents
    :local:

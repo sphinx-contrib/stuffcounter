@@ -5,7 +5,7 @@
     A sphinx extension to count stuff.
 
     :copyright: Copyright 2018 by Louis Paternault <spalax+python@gresille.org>
-    :license: GPLv3+, see LICENSE for details.
+    :license: Public domain, WTFPL, GNU GPLv2+, GNU AGPL, GNU LGPLv3+, 2-clause BSD, 3-clause BSD, Apache2, MIT, MPL, at your own choice. See https://framagit.org/spalax/sphinxcontrib-stuffcounter/blob/master/LICENSE.md for more information.
 """
 
 from docutils import nodes
