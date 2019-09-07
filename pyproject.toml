@@ -1,6 +1,6 @@
 [tool.black]
 line-length = 88
-# py36 = true # Uncomment if py36 (or above) only
+target-version = ['py35', 'py37', 'py38']
 exclude = '''
 /(
     \.git

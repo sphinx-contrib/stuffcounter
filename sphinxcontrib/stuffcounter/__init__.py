@@ -1,6 +1,7 @@
+# pylint: disable=line-too-long
 """
     sphinxcontrib.stuffcounter
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     A sphinx extension to count stuff.
 
@@ -21,13 +22,9 @@ __version__ = "0.0.0"
 class StuffNode(nodes.General, nodes.Element):
     """Stuff"""
 
-    pass
-
 
 class ContentNode(nodes.General, nodes.Element):
     """Content of stuff."""
-
-    pass
 
 
 def stuff_wrapper(directive, node, caption=None):
@@ -141,16 +138,12 @@ def latex_depart_stuff_node(self, node):
     self.body.append("\n")
 
 
-def latex_visit_content_node(self, node):
+def latex_visit_content_node(self, node):  # pylint: disable=unused-argument
     """Enter :class:`ContentNode` in LaTeX builder."""
-    # pylint: disable=unused-argument
-    pass
 
 
-def latex_depart_content_node(self, node):
+def latex_depart_content_node(self, node):  # pylint: disable=unused-argument
     """Leave :class:`ContentNode` in LaTeX builder."""
-    # pylint: disable=unused-argument
-    pass
 
 
 def latex_visit_caption_node(self, node):
