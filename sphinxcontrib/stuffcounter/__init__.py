@@ -191,7 +191,7 @@ def setup(app):
     app.connect("builder-inited", generate_latex_preamble)
     app.connect("config-inited", init_numfig_format)
 
-    app.add_stylesheet("stuff.css")
+    app.add_css_file("stuff.css")
 
     app.add_enumerable_node(
         StuffNode,
