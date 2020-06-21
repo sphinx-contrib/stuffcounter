@@ -37,7 +37,7 @@ setup(
     packages=["sphinxcontrib.stuffcounter"],
     install_requires=["sphinx>=1.8.0"],
     author="Louis Paternault",
-    author_email="spalax+python@gresille.org",
+    author_email="spalax@gresille.org",
     description="A sphinx extension to illustrate the `add_enumerable_node()` method.",
     url="https://framagit.org/spalax/sphinxcontrib-stuffcounter",
     project_urls={
