@@ -1,4 +1,4 @@
-.. Stuff Counter documentation master file, created by
+.. Stuff Counter documentation main file, created by
    sphinx-quickstart on Wed Oct 17 22:55:33 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -11,7 +11,7 @@ Welcome to Stuff Counter's documentation!
 - is automatically numbered,
 - can be referenced (using ``:ref:`` or ``:numref:``).
 
-If you want to write such a directive, study this `extension source code <https://framagit.org/spalax/sphinxcontrib-stuffcounter/blob/master/sphinxcontrib/stuffcounter/__init__.py>`_. The main points to look at (and copy) are:
+If you want to write such a directive, study this `extension source code <https://framagit.org/spalax/sphinxcontrib-stuffcounter/blob/main/sphinxcontrib/stuffcounter/__init__.py>`_. The main points to look at (and copy) are:
 
 - in the ``setup()`` function, the call to ``add_enumerable_node()``;
 - definition of the directive (class ``StuffDirective`` in this example).
