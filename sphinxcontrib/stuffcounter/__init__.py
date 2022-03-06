@@ -12,7 +12,6 @@
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.statemachine import ViewList
-
 from sphinx.domains.std import StandardDomain
 from sphinx.util.docutils import SphinxDirective
 

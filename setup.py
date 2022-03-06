@@ -15,9 +15,10 @@
 
 """Installer"""
 
-from setuptools import setup
 import codecs
 import os
+
+from setuptools import setup
 
 
 def readme():
